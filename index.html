@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Resizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Resize Photo to JPG</h2>
+
+  <input type="file" id="upload" accept="image/*"><br><br>
+
+  <label>Width (px): <input type="number" id="width"></label><br>
+  <label>Height (px): <input type="number" id="height"></label><br>
+  <label>Target size (KB): <input type="number" id="target"></label><br><br>
+
+  <button id="resize">Resize & Compress</button>
+  <button id="download" style="display:none;">Download JPG</button>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
